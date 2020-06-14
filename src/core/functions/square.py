@@ -1,8 +1,8 @@
-from core.functions.function import Function
+import core.functions.function as f
 import numpy as np
 
 
-class Square(Function):
+class Square(f.Function):
     def forward(self, x: np.ndarray) -> np.ndarray:
         return x ** 2
 

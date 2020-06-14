@@ -1,13 +1,15 @@
-from core.variable import Variable
+import core.variable as v
 import numpy as np
 
 
 class Function:
-    def __call__(self, value: Variable) -> Variable:
+    def __call__(self, value: 'v.Variable') -> 'v.Variable':
         x = value.data
         y = self.forward(x)
-        output = Variable(y)
-        self._input: Variable = value
+        output = v.Variable(y)
+        output.set_creator(self)
+        self._input: v.Variable = value
+        self._output: v.Variable = output
         return output
 
     def forward(self, x: np.ndarray) -> np.ndarray:
