@@ -1,5 +1,6 @@
-import core.variable as v
 import numpy as np
+
+import core.variable as v
 
 
 class Function:

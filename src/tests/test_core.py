@@ -1,8 +1,10 @@
 from unittest import TestCase
-from core.features import numerical_diff
-from core import Variable
-from core.functions import Square, Exp
+
 import numpy as np
+
+from core import Variable
+from core.features import numerical_diff
+from core.functions import Square, Exp
 
 
 class TestCore(TestCase):

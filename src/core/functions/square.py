@@ -1,5 +1,6 @@
-import core.functions.function as f
 import numpy as np
+
+import core.functions.function as f
 
 
 class Square(f.Function):

@@ -1,7 +1,9 @@
 from unittest import TestCase
-from core import Variable
-from core.functions import Function, Square, Exp
+
 import numpy as np
+
+from core import Variable
+from core.functions import Square, Exp
 
 
 class TestFunction(TestCase):
